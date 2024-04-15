@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator 3000</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img class="terminal" src="assets/fundo.gif" alt="background">
+    <div id="calculator">
+        <div class="flex h-full a-center">
+            <div class="w-full h-full flex a-center j-center border-b operator">
+                <p id="numero1"></p>
+                <p id="operador"></p>
+                <p id="numero2"></p>
+                <b class=" flex a-center j-center cor-cis numero limpol" onclick="apagAll()">
+                    CE
+                </b>
+            </div>
+        </div>
+        <div class="flex h-full a-center">
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(1)">
+                1
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(2)">
+                2
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(3)">
+                3
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-cis numero" onclick="adicionaOperador('/')">
+                /
+            </b>
+
+        </div>
+        <hr>
+        <div class="flex h-full a-center">
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(4)">
+                4
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(5)">
+                5
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(6)">
+                6
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-cis numero" onclick="adicionaOperador('*')">
+                *
+            </b>
+        </div>
+        <hr>
+        <div class="flex h-full a-center">
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(7)">
+                7
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(8)">
+                8
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(9)">
+                9
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-cis numero" onclick="adicionaOperador('-')">
+                -
+            </b>
+        </div>
+        <hr>
+        <div class="flex h-full a-center rounded-bl">
+            <b class="w-full h-full flex a-center j-center cor-cis border-r rounded-bl numero"
+                onclick="adicionarNumero('.')">
+                .
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-pal border-r numero" onclick="adicionarNumero(0)">
+                0
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-cis border-r numero" onclick="result()">
+                =
+            </b>
+            <b class="w-full h-full flex a-center j-center cor-cis rounded-br numero" onclick="adicionaOperador('+')">
+                +
+            </b>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
