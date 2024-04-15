@@ -1,4 +1,4 @@
-# Calculadora 3
+# Calculadora 3000
 
 ## Informações
 Bem-vindo à Calculadora 3000, a ferramenta definitiva para cálculos matemáticos com uma interface de terminal no estilo hacker.
